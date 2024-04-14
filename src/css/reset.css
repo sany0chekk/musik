@@ -1,4 +1,10 @@
 /* Reset styles */
+*,
+*::before,
+*::after {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +32,8 @@ a {
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 img {
