@@ -6,6 +6,8 @@
 @import url('./page-components/components.css');
 @import url('./page-components/page-header.css');
 @import url('./page-components/page-hero.css');
+@import url('./page-components/page-category.css');
+@import url('./page-components/page-about.css');
 
 :root {
   --blue-color: #381ddb;
