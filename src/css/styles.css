@@ -9,6 +9,9 @@
 @import url('./page-components/page-category.css');
 @import url('./page-components/page-about.css');
 @import url('./page-components/page-plan.css');
+@import url('./page-components/page-shorts.css');
+@import url('./page-components/page-contact.css');
+@import url('./page-components/page-footer.css');
 
 :root {
   --blue-color: #381ddb;

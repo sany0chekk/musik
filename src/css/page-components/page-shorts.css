@@ -1,0 +1,76 @@
+.shorts {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 240px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 82, 82, 0.05) 0%,
+    rgba(252, 82, 82, 0.05) 100%
+  );
+
+  & .fa-instagram {
+    position: absolute;
+    top: 5%;
+    left: 23%;
+
+    font-size: 370px;
+    color: #fc52523f;
+    z-index: -1;
+  }
+}
+
+.shorts-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+
+.shorts-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.shorts-item {
+  min-width: 370px;
+  width: 370px;
+}
+
+.shorts-item-img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+
+  margin-bottom: 24px;
+}
+
+.shorts-item-interaction {
+  margin-bottom: 8px;
+}
+
+.shorts-item-likes {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.shorts-item-comments {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.shorts-item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.shorts-item-tags {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
