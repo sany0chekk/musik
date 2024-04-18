@@ -1,6 +1,6 @@
 .hero {
   padding: 235px 0 53px;
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(/img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,7 +94,7 @@
 }
 
 .hero-timer {
-  font-family: 'Raleway';
+  font-family: 'Poppins';
   font-weight: 700;
   font-size: 114px;
   text-align: center;
