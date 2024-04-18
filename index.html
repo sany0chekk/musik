@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/musik/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/musik/assets/vendor-4ea312d0.js">
     <link rel="stylesheet" href="/musik/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/musik/assets/index-a743bf21.css">
+    <link rel="stylesheet" href="/musik/assets/index-38084936.css">
   </head>
   <body>
     <header class="header">
@@ -68,7 +68,10 @@
       </div>
     </div>
 
-    <div class="hero-timer">22d 13h 46m 18s</div>
+    <div class="hero-timer">
+      <span id="days">22</span>d <span id="hours">13</span>h
+      <span id="minutes">46</span>m <span id="seconds">18</span>s
+    </div>
   </div>
 </section>
 
@@ -81,7 +84,7 @@
     <ul class="swiper-wrapper category-list">
       <li class="swiper-slide category-item orange">
         <svg class="category-item-icon orange">
-          <use href="../img/icons.svg#icon-Dj-Mixer"></use>
+          <use href="/musik/assets/icons-96eefc10.svg#icon-Dj-Mixer"></use>
         </svg>
         <h3 class="category-item-title">Pop</h3>
         <p class="category-item-descr">
@@ -90,7 +93,7 @@
       </li>
       <li class="swiper-slide category-item red">
         <svg class="category-item-icon red">
-          <use href="../img/icons.svg#icon-Bagpipes"></use>
+          <use href="/musik/assets/icons-96eefc10.svg#icon-Bagpipes"></use>
         </svg>
         <h3 class="category-item-title">Folk</h3>
         <p class="category-item-descr">
@@ -99,7 +102,7 @@
       </li>
       <li class="swiper-slide category-item blue">
         <svg class="category-item-icon blue">
-          <use href="../img/icons.svg#icon-Saxophone"></use>
+          <use href="/musik/assets/icons-96eefc10.svg#icon-Saxophone"></use>
         </svg>
         <h3 class="category-item-title">Instrumental</h3>
         <p class="category-item-descr">
@@ -108,7 +111,7 @@
       </li>
       <li class="swiper-slide category-item pink">
         <svg class="category-item-icon pink">
-          <use href="../img/icons.svg#icon-Guitar"></use>
+          <use href="/musik/assets/icons-96eefc10.svg#icon-Guitar"></use>
         </svg>
         <h3 class="category-item-title">Rock</h3>
         <p class="category-item-descr">
@@ -117,7 +120,7 @@
       </li>
       <li class="swiper-slide category-item lightblue">
         <svg class="category-item-icon lightblue">
-          <use href="../img/icons.svg#icon-Trumpet"></use>
+          <use href="/musik/assets/icons-96eefc10.svg#icon-Trumpet"></use>
         </svg>
         <h3 class="category-item-title">Jazz</h3>
         <p class="category-item-descr">
@@ -125,15 +128,6 @@
         </p>
       </li>
     </ul>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
 </section>
 
@@ -262,123 +256,127 @@
     <i class="fa-brands fa-instagram"></i>
     <h2 class="shorts-title">See our Best Shots</h2>
   </div>
-  <ul class="shorts-list">
-    <li class="shorts-item">
-      <img
-        srcset="/musik/assets/shots-1-1f19c762.jpg 1x, /musik/assets/shots-1-2x-b717ab50.jpg 2x"
-        src="/musik/assets/shots-1-1f19c762.jpg"
-        alt="Image"
-        class="shorts-item-img"
-      />
-      <div class="shorts-item-interaction">
-        <button class="shorts-item-likes">
-          <i class="fa-regular fa-heart"></i>
-          <snan>412</snan>
-        </button>
-        <button class="shorts-item-comments">
-          <i class="fa-regular fa-comment"></i>
-          <snan>140</snan>
-        </button>
-      </div>
-      <p class="shorts-item-descr">Lorem Ipsum Amet</p>
-      <p class="shorts-item-tags">
-        #music #concert #conference #london #event #artist #dj #soundtrack
-        #dance
-      </p>
-    </li>
-    <li class="shorts-item">
-      <img
-        srcset="/musik/assets/shots-2-d2be2ccb.jpg 1x, /musik/assets/shots-2-2x-e14b28a2.jpg 2x"
-        src="/musik/assets/shots-2-d2be2ccb.jpg"
-        alt="Image"
-        class="shorts-item-img"
-      />
-      <div class="shorts-item-interaction">
-        <button class="shorts-item-likes">
-          <i class="fa-regular fa-heart"></i>
-          <snan>412</snan>
-        </button>
-        <button class="shorts-item-comments">
-          <i class="fa-regular fa-comment"></i>
-          <snan>140</snan>
-        </button>
-      </div>
-      <p class="shorts-item-descr">Lorem Ipsum Amet</p>
-      <p class="shorts-item-tags">
-        #music #concert #conference #london #event #artist #dj #soundtrack
-        #dance
-      </p>
-    </li>
-    <li class="shorts-item">
-      <img
-        srcset="/musik/assets/shots-3-da533f47.jpg 1x, /musik/assets/shots-3-2x-4aece231.jpg 2x"
-        src="/musik/assets/shots-3-da533f47.jpg"
-        alt="Image"
-        class="shorts-item-img"
-      />
-      <div class="shorts-item-interaction">
-        <button class="shorts-item-likes">
-          <i class="fa-regular fa-heart"></i>
-          <snan>412</snan>
-        </button>
-        <button class="shorts-item-comments">
-          <i class="fa-regular fa-comment"></i>
-          <snan>140</snan>
-        </button>
-      </div>
-      <p class="shorts-item-descr">Lorem Ipsum Amet</p>
-      <p class="shorts-item-tags">
-        #music #concert #conference #london #event #artist #dj #soundtrack
-        #dance
-      </p>
-    </li>
-    <li class="shorts-item">
-      <img
-        srcset="/musik/assets/shots-4-da3c0501.jpg 1x, /musik/assets/shots-4-2x-62645f55.jpg 2x"
-        src="/musik/assets/shots-4-da3c0501.jpg"
-        alt="Image"
-        class="shorts-item-img"
-      />
-      <div class="shorts-item-interaction">
-        <button class="shorts-item-likes">
-          <i class="fa-regular fa-heart"></i>
-          <snan>412</snan>
-        </button>
-        <button class="shorts-item-comments">
-          <i class="fa-regular fa-comment"></i>
-          <snan>140</snan>
-        </button>
-      </div>
-      <p class="shorts-item-descr">Lorem Ipsum Amet</p>
-      <p class="shorts-item-tags">
-        #music #concert #conference #london #event #artist #dj #soundtrack
-        #dance
-      </p>
-    </li>
-    <li class="shorts-item">
-      <img
-        srcset="/musik/assets/shots-5-802fba35.jpg 1x, /musik/assets/shots-5-2x-c150286e.jpg 2x"
-        src="/musik/assets/shots-5-802fba35.jpg"
-        alt="Image"
-        class="shorts-item-img"
-      />
-      <div class="shorts-item-interaction">
-        <button class="shorts-item-likes">
-          <i class="fa-regular fa-heart"></i>
-          <snan>412</snan>
-        </button>
-        <button class="shorts-item-comments">
-          <i class="fa-regular fa-comment"></i>
-          <snan>140</snan>
-        </button>
-      </div>
-      <p class="shorts-item-descr">Lorem Ipsum Amet</p>
-      <p class="shorts-item-tags">
-        #music #concert #conference #london #event #artist #dj #soundtrack
-        #dance
-      </p>
-    </li>
-  </ul>
+  <div class="shorts-list-container">
+    <ul class="shorts-list swiper-wrapper">
+      <li class="shorts-item swiper-slide">
+        <img
+          srcset="/musik/assets/shots-1-1f19c762.jpg 1x, /musik/assets/shots-1-2x-b717ab50.jpg 2x"
+          src="/musik/assets/shots-1-1f19c762.jpg"
+          alt="Image"
+          class="shorts-item-img"
+        />
+        <div class="shorts-item-interaction">
+          <button class="shorts-item-likes">
+            <i class="fa-regular fa-heart"></i>
+            <snan>412</snan>
+          </button>
+          <button class="shorts-item-comments">
+            <i class="fa-regular fa-comment"></i>
+            <snan>140</snan>
+          </button>
+        </div>
+        <p class="shorts-item-descr">Lorem Ipsum Amet</p>
+        <p class="shorts-item-tags">
+          #music #concert #conference #london #event #artist #dj #soundtrack
+          #dance
+        </p>
+      </li>
+      <li class="shorts-item swiper-slide">
+        <img
+          srcset="/musik/assets/shots-2-d2be2ccb.jpg 1x, /musik/assets/shots-2-2x-e14b28a2.jpg 2x"
+          src="/musik/assets/shots-2-d2be2ccb.jpg"
+          alt="Image"
+          class="shorts-item-img"
+        />
+        <div class="shorts-item-interaction">
+          <button class="shorts-item-likes">
+            <i class="fa-regular fa-heart"></i>
+            <snan>412</snan>
+          </button>
+          <button class="shorts-item-comments">
+            <i class="fa-regular fa-comment"></i>
+            <snan>140</snan>
+          </button>
+        </div>
+        <p class="shorts-item-descr">Lorem Ipsum Amet</p>
+        <p class="shorts-item-tags">
+          #music #concert #conference #london #event #artist #dj #soundtrack
+          #dance
+        </p>
+      </li>
+      <li class="shorts-item swiper-slide">
+        <img
+          srcset="/musik/assets/shots-3-da533f47.jpg 1x, /musik/assets/shots-3-2x-4aece231.jpg 2x"
+          src="/musik/assets/shots-3-da533f47.jpg"
+          alt="Image"
+          class="shorts-item-img"
+        />
+        <div class="shorts-item-interaction">
+          <button class="shorts-item-likes">
+            <i class="fa-regular fa-heart"></i>
+            <snan>412</snan>
+          </button>
+          <button class="shorts-item-comments">
+            <i class="fa-regular fa-comment"></i>
+            <snan>140</snan>
+          </button>
+        </div>
+        <p class="shorts-item-descr">Lorem Ipsum Amet</p>
+        <p class="shorts-item-tags">
+          #music #concert #conference #london #event #artist #dj #soundtrack
+          #dance
+        </p>
+      </li>
+      <li class="shorts-item swiper-slide">
+        <img
+          srcset="/musik/assets/shots-4-da3c0501.jpg 1x, /musik/assets/shots-4-2x-62645f55.jpg 2x"
+          src="/musik/assets/shots-4-da3c0501.jpg"
+          alt="Image"
+          class="shorts-item-img"
+        />
+        <div class="shorts-item-interaction">
+          <button class="shorts-item-likes">
+            <i class="fa-regular fa-heart"></i>
+            <snan>412</snan>
+          </button>
+          <button class="shorts-item-comments">
+            <i class="fa-regular fa-comment"></i>
+            <snan>140</snan>
+          </button>
+        </div>
+        <p class="shorts-item-descr">Lorem Ipsum Amet</p>
+        <p class="shorts-item-tags">
+          #music #concert #conference #london #event #artist #dj #soundtrack
+          #dance
+        </p>
+      </li>
+      <li class="shorts-item swiper-slide">
+        <img
+          srcset="/musik/assets/shots-5-802fba35.jpg 1x, /musik/assets/shots-5-2x-c150286e.jpg 2x"
+          src="/musik/assets/shots-5-802fba35.jpg"
+          alt="Image"
+          class="shorts-item-img"
+        />
+        <div class="shorts-item-interaction">
+          <button class="shorts-item-likes">
+            <i class="fa-regular fa-heart"></i>
+            <snan>412</snan>
+          </button>
+          <button class="shorts-item-comments">
+            <i class="fa-regular fa-comment"></i>
+            <snan>140</snan>
+          </button>
+        </div>
+        <p class="shorts-item-descr">Lorem Ipsum Amet</p>
+        <p class="shorts-item-tags">
+          #music #concert #conference #london #event #artist #dj #soundtrack
+          #dance
+        </p>
+      </li>
+    </ul>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </section>
 
       <section class="contact">
