@@ -11,10 +11,17 @@
   margin-bottom: 60px;
 }
 
+.plan .swiper {
+  /* overflow: auto; */
+  padding: 20px;
+}
+
 .plan-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1170px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .plan-item {
@@ -28,7 +35,7 @@
   overflow: hidden;
 
   border-radius: 20px;
-  box-shadow: 0 20px 100px 0 rgba(34, 34, 34, 0.15);
+  box-shadow: 0 0px 15px 0 rgba(34, 34, 34, 0.15);
 
   padding: 30px;
 

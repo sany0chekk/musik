@@ -1,17 +1,30 @@
 .contact-container {
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1170px) {
+    flex-direction: row;
+  }
 }
 
 .contact-info {
   flex: 45%;
   background-color: var(--blue-color);
-  padding: 120px 80px;
+  padding: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 80px;
+  }
 }
 
 .contact-interaction {
   flex: 55%;
   background: rgba(34, 34, 34, 0.03);
-  padding: 100px 130px;
+  padding: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 130px;
+  }
 }
 
 .contact-info-title {

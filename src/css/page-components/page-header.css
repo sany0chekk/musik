@@ -21,6 +21,10 @@
 
 .header-nav {
   margin-left: auto;
+
+  @media screen and (max-width: 1170px) {
+    display: none;
+  }
 }
 
 .header-nav-list {
@@ -60,5 +64,9 @@
   &:focus {
     background-color: var(--blue-color);
     color: #fff;
+  }
+
+  @media screen and (max-width: 1170px) {
+    display: none;
   }
 }

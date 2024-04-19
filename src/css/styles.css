@@ -13,6 +13,9 @@
 @import url('./page-components/page-contact.css');
 @import url('./page-components/page-footer.css');
 
+@import url('./page-components/burger-menu.css');
+@import url('./page-components/bg-elements.css');
+
 :root {
   --blue-color: #381ddb;
   --red-color: #fc5252;

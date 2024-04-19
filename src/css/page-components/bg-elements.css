@@ -1,0 +1,17 @@
+.main-container {
+  position: relative;
+}
+
+.js-element {
+  position: absolute;
+  z-index: 50;
+  max-width: 100px;
+  pointer-events: none;
+  user-select: none;
+
+  &.not-mobile {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

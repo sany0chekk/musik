@@ -1,5 +1,17 @@
 .category {
-  padding-top: 240px;
+  padding-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 240px;
+  }
+}
+
+.category .swiper {
+  padding: 0 20px;
 }
 
 .category-title {
