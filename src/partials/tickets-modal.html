@@ -1,27 +1,50 @@
-<div class="backdrop">
-  <div class="tickets-dialog">
-    <button class="tickets-close"></button>
-    <h2 class="tickets-title"></h2>
-    <form class="tickets-form">
-      <input type="text" name="username" class="tickets-form-input" />
-      <input type="email" name="usermail" class="tickets-form-input" />
-      <div class="ticket-form-info ticket-info">
-        <div class="ticket-info-wrapper">
-          <p class="ticket-info-name"></p>
-          <div class="ticker-info-counter">
-            <button class="ticket-info-counter-decrement"></button>
-            <input type="number" class="ticket-info-counter-value" value="0" />
-            <button class="ticket-info-counter-increment"></button>
+<div class="backdrop tickets-modal">
+  <div class="ticket-dialog-container">
+    <div class="ticket-dialog">
+      <button class="ticket-close">
+        <i class="fa-solid fa-xmark ticket-close-icon"></i>
+      </button>
+      <h2 class="ticket-title">Buy tickets</h2>
+      <form class="ticket-form">
+        <input
+          type="text"
+          name="username"
+          class="ticket-form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="email"
+          name="usermail"
+          class="ticket-form-input"
+          placeholder="Email"
+          required
+        />
+        <div class="ticket-form-info ticket-info">
+          <div class="ticket-info-wrapper">
+            <div class="ticket-info-content">
+              <p class="ticket-info-name">Title</p>
+              <p class="ticket-info-price">$<span id="ticket-price">0</span></p>
+            </div>
+            <div class="ticket-info-counter">
+              <i class="fa-solid fa-minus ticket-info-counter-decrement"></i>
+              <input
+                type="number"
+                class="ticket-info-counter-value"
+                value="1"
+              />
+              <i class="fa-solid fa-plus ticket-info-counter-increment"></i>
+            </div>
+          </div>
+          <div class="ticket-info-wrapper ticket-price">
+            <p class="ticket-price-title">Total price:</p>
+            <p class="ticket-price-value">
+              $<span id="ticket-total-price">0</span>
+            </p>
           </div>
         </div>
-        <div class="ticket-info-wrapper ticket-price">
-          <p class="ticket-price-title"></p>
-          <p class="ticket-price-value">
-            $<span id="ticket-total-price">0</span>
-          </p>
-        </div>
-      </div>
-      <button class="ticket-form-btn">Complete</button>
-    </form>
+        <button class="ticket-form-btn">Complete</button>
+      </form>
+    </div>
   </div>
 </div>

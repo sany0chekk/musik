@@ -1,0 +1,114 @@
+.ticket-dialog-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.ticket-dialog {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+
+  max-width: 400px;
+  width: 100%;
+}
+
+.ticket-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.ticket-title {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticket-form-input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #00000060;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 14px;
+  background-color: transparent;
+
+  transition: border-color 0.2s ease-in-out;
+
+  &:focus {
+    border-color: #000;
+  }
+}
+
+.ticket-info-wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.ticket-info-name {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.ticket-info-price {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.ticket-price-value {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.ticket-form-btn {
+  background-color: var(--blue-color);
+  border-radius: 4px;
+  border: 2px solid var(--blue-color);
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  padding: 8px 16px;
+
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    background-color: transparent;
+  }
+}
+
+.ticket-info-counter {
+  padding: 10px;
+  border: 1px solid #00000060;
+  border-radius: 4px;
+}
+
+.ticket-info-counter-value {
+  width: 40px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
