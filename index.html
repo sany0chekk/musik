@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/musik/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/musik/assets/vendor-4ea312d0.js">
     <link rel="stylesheet" href="/musik/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/musik/assets/index-2601bc29.css">
+    <link rel="stylesheet" href="/musik/assets/index-6ce838a5.css">
   </head>
   <body>
     <header class="header">
@@ -42,7 +42,7 @@
         </li>
       </ul>
     </nav>
-    <button class="header-btn">GET TICKETS</button>
+    <a href="#plan" class="header-btn">GET TICKETS</a>
     <button class="burger-open"><i class="fa-solid fa-bars"></i></button>
   </div>
 </header>
@@ -399,22 +399,21 @@
   </div>
 </section>
 
-        <section class="plan">
+        <section class="plan" id="plan">
   <div class="container plan-container">
     <h2 class="plan-title">Choose a Tier that’s right for you</h2>
     <div class="plan-list-container swiper">
       <ul class="plan-list swiper-wrapper">
-        <li class="plan-item dark swiper-slide">
+        <li class="plan-item dark swiper-slide" data-price="100">
           <h3 class="plan-item-title">Basic</h3>
           <p class="plan-item-price">$100</p>
           <div class="plan-item-descr">
             <p>1 Seat Available</p>
             <p>Access to Wifi Router</p>
-            <p>Free Food & Coffee</p>
           </div>
           <button class="plan-item-btn">Get Tickets</button>
         </li>
-        <li class="plan-item blue swiper-slide">
+        <li class="plan-item blue swiper-slide" data-price="150">
           <h3 class="plan-item-title">Standart</h3>
           <p class="plan-item-price">$150</p>
           <div class="plan-item-descr">
@@ -424,13 +423,14 @@
           </div>
           <button class="plan-item-btn">Get Tickets</button>
         </li>
-        <li class="plan-item red swiper-slide">
+        <li class="plan-item red swiper-slide" data-price="200">
           <h3 class="plan-item-title">Premium</h3>
           <p class="plan-item-price">$200</p>
           <div class="plan-item-descr">
             <p>1 Seat Available</p>
             <p>Access to Wifi Router</p>
             <p>Free Food & Coffee</p>
+            <p>Pass to the party after the concert</p>
           </div>
           <button class="plan-item-btn">Get Tickets</button>
         </li>
@@ -687,19 +687,19 @@
   </button>
   <ul class="burger-nav-list">
     <li class="burger-nav-item">
-      <a href="#" class="burger-nav-link">Home</a>
+      <a href="" class="burger-nav-link">Home</a>
     </li>
     <li class="burger-nav-item">
       <a href="#about" class="burger-nav-link">Speakers</a>
     </li>
     <li class="burger-nav-item">
-      <a href="#" class="burger-nav-link">Schedule</a>
+      <a href="" class="burger-nav-link">Schedule</a>
     </li>
     <li class="burger-nav-item">
       <a href="#contact" class="burger-nav-link">Contact Us</a>
     </li>
   </ul>
-  <button class="burger-btn">GET TICKETS</button>
+  <a href="#plan" class="burger-btn">GET TICKETS</a>
 </div>
 
 
