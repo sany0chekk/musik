@@ -73,6 +73,21 @@ const planSwiper = new Swiper('.plan-list-container', {
   },
 });
 
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute('href').substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
+
 const countDownDate = new Date('Dec 1, 2024 00:00:00').getTime();
 setInterval(() => {
   const now = new Date().getTime();
@@ -108,10 +123,17 @@ burgerOpenBtn.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
 });
 
-burgerCloseBtn.addEventListener('click', () => {
+// burgerCloseBtn.addEventListener('click', burgerClose);
+burgerEl.addEventListener('click', event => {
+  if (event.target !== event.currentTarget) {
+    burgerClose();
+  }
+});
+
+function burgerClose() {
   burgerEl.classList.remove('active');
   document.body.style.overflow = null;
-});
+}
 
 const jsElemenets = document.querySelectorAll('.js-element');
 
@@ -153,19 +175,4 @@ function animateElement(element) {
   }
 
   moveElement();
-}
-
-const anchors = document.querySelectorAll('a[href*="#"]');
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const blockID = anchor.getAttribute('href').substr(1);
-
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  });
 }

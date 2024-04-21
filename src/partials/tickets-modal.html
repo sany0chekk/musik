@@ -1,0 +1,27 @@
+<div class="backdrop">
+  <div class="tickets-dialog">
+    <button class="tickets-close"></button>
+    <h2 class="tickets-title"></h2>
+    <form class="tickets-form">
+      <input type="text" name="username" class="tickets-form-input" />
+      <input type="email" name="usermail" class="tickets-form-input" />
+      <div class="ticket-form-info ticket-info">
+        <div class="ticket-info-wrapper">
+          <p class="ticket-info-name"></p>
+          <div class="ticker-info-counter">
+            <button class="ticket-info-counter-decrement"></button>
+            <input type="number" class="ticket-info-counter-value" value="0" />
+            <button class="ticket-info-counter-increment"></button>
+          </div>
+        </div>
+        <div class="ticket-info-wrapper ticket-price">
+          <p class="ticket-price-title"></p>
+          <p class="ticket-price-value">
+            $<span id="ticket-total-price">0</span>
+          </p>
+        </div>
+      </div>
+      <button class="ticket-form-btn">Complete</button>
+    </form>
+  </div>
+</div>

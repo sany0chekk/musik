@@ -16,21 +16,18 @@
   padding: 20px;
 }
 
-.plan-list {
-  margin-bottom: 30px;
-  @media screen and (min-width: 1170px) {
-    display: flex;
-    justify-content: center;
-  }
+.plan .swiper-slide {
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 
 .plan-item {
   position: relative;
-  width: 370px;
+  /* width: 370px; */
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   overflow: hidden;
 
@@ -100,6 +97,7 @@
 }
 
 .plan-item-btn {
+  margin-top: auto;
   font-weight: 700;
   font-size: 16px;
   color: var(--blue-color);
