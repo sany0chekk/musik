@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/musik/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/musik/assets/vendor-4ea312d0.js">
     <link rel="stylesheet" href="/musik/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/musik/assets/index-6ce838a5.css">
+    <link rel="stylesheet" href="/musik/assets/index-a3164e84.css">
   </head>
   <body>
     <header class="header">
@@ -29,13 +29,13 @@
     <nav class="header-nav">
       <ul class="header-nav-list">
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Home</a>
+          <a href="" class="header-nav-link">Home</a>
         </li>
         <li class="header-nav-link">
           <a href="#about" class="header-nav-link">Speakers</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Schedule</a>
+          <a href="" class="header-nav-link">Schedule</a>
         </li>
         <li class="header-nav-item">
           <a href="#contact" class="header-nav-link">Contact Us</a>
@@ -700,6 +700,57 @@
     </li>
   </ul>
   <a href="#plan" class="burger-btn">GET TICKETS</a>
+</div>
+
+    <div class="backdrop tickets-modal">
+  <div class="ticket-dialog-container">
+    <div class="ticket-dialog">
+      <button class="ticket-close">
+        <i class="fa-solid fa-xmark ticket-close-icon"></i>
+      </button>
+      <h2 class="ticket-title">Buy tickets</h2>
+      <form class="ticket-form">
+        <input
+          type="text"
+          name="username"
+          class="ticket-form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="email"
+          name="usermail"
+          class="ticket-form-input"
+          placeholder="Email"
+          required
+        />
+        <div class="ticket-form-info ticket-info">
+          <div class="ticket-info-wrapper">
+            <div class="ticket-info-content">
+              <p class="ticket-info-name">Title</p>
+              <p class="ticket-info-price">$<span id="ticket-price">0</span></p>
+            </div>
+            <div class="ticket-info-counter">
+              <i class="fa-solid fa-minus ticket-info-counter-decrement"></i>
+              <input
+                type="number"
+                class="ticket-info-counter-value"
+                value="1"
+              />
+              <i class="fa-solid fa-plus ticket-info-counter-increment"></i>
+            </div>
+          </div>
+          <div class="ticket-info-wrapper ticket-price">
+            <p class="ticket-price-title">Total price:</p>
+            <p class="ticket-price-value">
+              $<span id="ticket-total-price">0</span>
+            </p>
+          </div>
+        </div>
+        <button class="ticket-form-btn">Complete</button>
+      </form>
+    </div>
+  </div>
 </div>
 
 
