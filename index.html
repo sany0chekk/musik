@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/musik/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/musik/assets/vendor-4ea312d0.js">
     <link rel="stylesheet" href="/musik/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/musik/assets/index-a3164e84.css">
+    <link rel="stylesheet" href="/musik/assets/index-a5702961.css">
   </head>
   <body>
     <header class="header">
@@ -713,6 +713,7 @@
         <input
           type="text"
           name="username"
+          id="username"
           class="ticket-form-input"
           placeholder="Name"
           required
@@ -720,6 +721,7 @@
         <input
           type="email"
           name="usermail"
+          id="usermail"
           class="ticket-form-input"
           placeholder="Email"
           required
@@ -749,6 +751,25 @@
         </div>
         <button class="ticket-form-btn">Complete</button>
       </form>
+    </div>
+  </div>
+</div>
+
+    <div class="backdrop ticket-result">
+  <div class="ticket-result-container">
+    <div class="ticket-result-dialog">
+      <div class="ticket-result-info">
+        <p>Owner:<span id="ticket-owner">Name</span></p>
+        <p>Email:<span id="ticket-email">Email</span></p>
+        <p>
+          <span id="ticket-type">Type</span>
+          <span id="ticket-value">1</span>
+        </p>
+        <p>
+          Total price: <span>$<span id="ticket-result-price">0</span></span>
+        </p>
+      </div>
+      <button class="ticket-result-btn">Confirm</button>
     </div>
   </div>
 </div>
