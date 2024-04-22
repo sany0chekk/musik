@@ -1,10 +1,58 @@
 'use strict';
 
 const ticketTypes = document.querySelectorAll('.plan-item');
-
 ticketTypes.forEach(element => {
   element.addEventListener('click', getTickets);
 });
+
+const ticketModalEl = document.querySelector('.tickets-modal');
+ticketModalEl.addEventListener('click', event => {
+  event.preventDefault();
+  const modalEl = event.target.closest('.ticket-dialog');
+  const modalSubmitBtn = ticketModalEl.querySelector('.ticket-form-btn');
+
+  const incrementBtn = modalEl.querySelector('.ticket-info-counter-increment'),
+    decrementBtn = modalEl.querySelector('.ticket-info-counter-decrement');
+  const counterEl = modalEl.querySelector('.ticket-info-counter-value');
+
+  if (event.target === incrementBtn) {
+    counterEl.value = parseFloat(counterEl.value) + 1;
+    updateTotalPrice();
+  } else if (event.target === decrementBtn) {
+    counterEl.value = parseFloat(counterEl.value) - 1;
+    updateTotalPrice();
+  }
+
+  if (event.target === modalSubmitBtn) {
+    const resultModal = document.querySelector('.ticket-result');
+    const resultTicketOwner = resultModal.querySelector('#ticket-owner');
+    const resultTicketEmail = resultModal.querySelector('#ticket-email');
+    const resultTicketType = resultModal.querySelector('#ticket-type');
+    const resultTicketNumber = resultModal.querySelector('#ticket-value');
+    const resultTotalPrice = resultModal.querySelector('#ticket-result-price');
+
+    const ticketOwner = modalEl.querySelector('#username');
+    const ticketEmail = modalEl.querySelector('#usermail');
+    const ticketType = modalEl.querySelector('.ticket-info-name');
+    const ticketTotalPrice = modalEl.querySelector('#ticket-total-price');
+
+    resultTicketOwner.textContent = ticketOwner.value.trim();
+    resultTicketEmail.textContent = ticketEmail.value.trim();
+    resultTicketType.textContent = ticketType.textContent;
+    resultTicketNumber.textContent = counterEl.value;
+    resultTotalPrice.textContent = ticketTotalPrice.textContent;
+
+    closeModal(event);
+    resultModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+});
+
+const modalCloseBtn = ticketModalEl.querySelector('.ticket-close');
+modalCloseBtn.addEventListener('click', closeModal);
+
+const ticketsCounter = document.querySelector('.ticket-info-counter-value');
+ticketsCounter.addEventListener('input', updateTotalPrice);
 
 function getTickets(event) {
   const ticketItem = event.target.closest('.plan-item');
@@ -25,31 +73,8 @@ function getTickets(event) {
   }
 }
 
-const ticketModalEl = document.querySelector('.tickets-modal');
-
-ticketModalEl.addEventListener('click', event => {
-  event.preventDefault();
-  const modalEl = event.target.closest('.ticket-dialog');
-
-  const incrementBtn = modalEl.querySelector('.ticket-info-counter-increment'),
-    decrementBtn = modalEl.querySelector('.ticket-info-counter-decrement');
-  const counterEl = modalEl.querySelector('.ticket-info-counter-value');
-
-  if (event.target === incrementBtn) {
-    counterEl.value = parseFloat(counterEl.value) + 1;
-    updateTotalPrice();
-  } else if (event.target === decrementBtn) {
-    counterEl.value = parseFloat(counterEl.value) - 1;
-    updateTotalPrice();
-  }
-});
-
-const modalCloseBtn = ticketModalEl.querySelector('.ticket-close');
-modalCloseBtn.addEventListener('click', closeModal);
-
-const ticketsCounter = document.querySelector('.ticket-info-counter-value');
-
-ticketsCounter.addEventListener('input', updateTotalPrice);
+const resultModalBtn = document.querySelector('.ticket-result-btn');
+resultModalBtn.addEventListener('click', closeModal);
 
 function updateTotalPrice() {
   const price = document.querySelector('#ticket-price');

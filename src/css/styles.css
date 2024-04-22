@@ -16,6 +16,7 @@
 @import url('./page-components/burger-menu.css');
 @import url('./page-components/tickets-modal.css');
 @import url('./page-components/bg-elements.css');
+@import url('./page-components/tickets-result.css');
 
 :root {
   --blue-color: #381ddb;
