@@ -1,6 +1,6 @@
 'use strict';
 
-const countDownDate = new Date('Dec 1, 2024 00:00:00').getTime();
+const countDownDate = new Date('Dec 1, 2026 00:00:00').getTime();
 setInterval(() => {
   timeCounter(countDownDate);
 }, 1000);
